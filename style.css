@@ -1,0 +1,176 @@
+
+/* ===== STYLE GENERAL ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(circle at top right, #dce9f8, transparent 40%),
+        #f2f5f9;
+    color: #263445;
+}
+
+/* ===== CONTENEUR PRINCIPAL ===== */
+
+.container {
+    width: 100%;
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(20, 40, 70, 0.08);
+}
+
+h1 {
+    color: #17365d;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #718096;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* ===== MENU D'ACCUEIL ===== */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+/* ===== BOUTONS ET LIENS ===== */
+
+.bouton {
+    display: block;
+    padding: 13px 18px;
+    background-color: #173f70;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.bouton:hover {
+    background-color: #245b96;
+    transform: translateY(-2px);
+}
+
+.danger {
+    background-color: #b83232;
+}
+
+.danger:hover {
+    background-color: #922727;
+}
+
+.retour {
+    display: inline-block;
+    margin-top: 20px;
+    color: #245b96;
+    text-decoration: none;
+}
+
+.retour:hover {
+    text-decoration: underline;
+}
+
+/* ===== FORMULAIRES ===== */
+
+form {
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+label {
+    display: block;
+    margin-top: 17px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #34445a;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #245b96;
+    box-shadow: 0 0 0 3px rgba(36, 91, 150, 0.12);
+}
+
+form button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* ===== TABLEAU DES ETUDIANTS ===== */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+thead {
+    background-color: #173f70;
+    color: white;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border: 1px solid #e1e7ef;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f6fb;
+}
+
+tbody tr:hover {
+    background-color: #e2edf9;
+}
+
+/* ===== PETITS ECRANS ===== */
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
