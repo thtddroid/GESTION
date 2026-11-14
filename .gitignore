@@ -1,0 +1,10 @@
+# Configuration locale
+connexion.php
+
+# Fichiers temporaires
+*.log
+*.tmp
+
+# Fichiers système
+.DS_Store
+Thumbs.db
